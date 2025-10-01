@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ristorante Zeffirino</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  corso html inizio  
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <img src="logo-zeffirino.png" alt="Logo Ristorante Zeffirino">
+    </div>
+    <label for="menu-toggle" class="menu-toggle">☰</label>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menù</a></li>
+      <li><a href="#chi-siamo">Chi Siamo</a></li>
+      <li><a href="#prenotazioni">Prenotazioni</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="hero-text">
+      <h1>Benvenuti al Ristorante Zeffirino</h1>
+      <p>Specialità di pesce fresco nel cuore di Genova</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- SEZIONE MENÙ -->
+    <section id="menu">
+      <h2>Il nostro Menù</h2>
+
+      <div class="menu-item">
+        <h3>Giardino di mare - Crudo di mare (*) <span class="price">€ 38</span></h3>
+        <p>Selezione di cruditées di mare - coquillage, mollame, crostacei e pescati secondo la disponibilità del mercato</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Tartar di Gambero di Santa Margherita <span class="price">€ 32</span></h3>
+        <p>Con profumo di lime, vellutata di stracciatella e pomodorino brunoise</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Tartar di tonno “rosso” <span class="price">€ 28</span></h3>
+        <p>Capperi di Pantelleria, olive Taggiasche, Datterini e salsa Tzatziki</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Salmone selvaggio marinato agli agrumi <span class="price">€ 30</span></h3>
+        <p>Con crema di Caprino alle erbe e Caviale in acqua di cetriolo</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Tentacolo di Polpo scottato <span class="price">€ 27</span></h3>
+        <p>Su letto di Quinoa con dressing all’arancio di Sicilia</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Tagliolini ai 30 tuorli con Astice <span class="price">€ 42</span></h3>
+        <p>Con pomodorino Datterino e foglie di basilico</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Tagliolini al Caviale profumati al Lime <span class="price">€ 45</span></h3>
+        <p>Un piatto iconico con caviale e note fresche di lime</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Spaghetti neri di Gragnano con Vongole e Bottarga <span class="price">€ 34</span></h3>
+        <p>Bottarga di Cabras e vongole veraci</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Spaghetti ai Profumi di Mare <span class="price">€ 29</span></h3>
+        <p>Con Calamari, Gamberi, Frutti di mare e pomodorini Pachino</p>
+      </div>
+    </section>
+
+    <!-- SEZIONE CHI SIAMO -->
+    <section id="chi-siamo">
+      <h2>Chi Siamo</h2>
+      <p>
+        Nel cuore della città di Genova, Zeffirino Belloni con sua moglie Olga e i loro 5 figli Gianpaolo, Luciano, Odino, Alberto e Giorgio,
+        accompagnati dalle loro mogli Giannina, Livia e Renata assieme ad un grande spirito di sacrificio hanno creato un marchio riconosciuto a livello internazionale.
+      </p>
+      <p>
+        Una delle caratteristiche principali della cucina italiana è la sua semplicità, con molti piatti composti da pochi ingredienti e di qualità:
+        la ricetta del successo di Zeffirino è la Famiglia.
+      </p>
+    </section>
+
+    <!-- SEZIONE PRENOTAZIONI -->
+    <section id="prenotazioni">
+      <h2>Prenotazioni</h2>
+      <p>Prenota il tuo tavolo per vivere un’esperienza unica tra i sapori del mare e della tradizione ligure.</p>
+      <a href="mailto:info@ristorantezeffirino.it" class="btn">Prenota Ora</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contatti">
+    <p>&copy; 2025 Ristorante Zeffirino</p>
+    <p>📍 Via XX Settembre 20, Genova</p>
+    <p>📞 +39 010 9876543 | ✉️ info@ristorantezeffirino.it</p>
+    <a href="#home" class="btn-top">↑ Torna su</a>
+  </footer>
 </body>
 </html>
